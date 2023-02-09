@@ -1,0 +1,221 @@
+/* header styling start */
+.tw-navigation .navbar-brand {
+    font-weight: 800;
+    font-size: 23px;
+}
+
+.AuthBtn {
+    background-color: var(--green);
+    font-weight: 400;
+    width: 100px;
+}
+
+.logoIcon span:nth-child(1) {
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: var(--green);
+    line-height: 40px;
+}
+
+.eButton {
+    width: max-content;
+    background-color: var(--green);
+}
+
+/* header styling end */
+
+.formGroup label {
+    left: 10px;
+    top: -13px;
+    padding: 0 10px;
+    font-size: 15px;
+    color: #797878;
+}
+
+.formGroup input,
+select {
+    padding: 10px;
+}
+
+
+/* service card styling start */
+.services {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+}
+
+.service .imgBox {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.service .imgBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transform: scale(1);
+    transition: all 0.5s ease-in-out;
+}
+
+.service .imgBox:hover img {
+    transform: scale(1.2);
+    transition: all 0.5s ease-in-out;
+}
+
+/* service card styling end */
+
+/* review profile card style start */
+.profile {
+    height: 350px;
+    width: 250px;
+}
+
+.profileBox{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin: 20px auto;
+}
+
+.stars{
+   list-style: none;
+}
+
+.profileBox img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.owl-carousel {
+    position: relative;
+}
+
+.owl-nav{
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    transform: translateY(-50%);
+    z-index: 1000;
+}
+
+.owl-dots {
+    display: none;
+}
+
+.owl-prev {
+    background-color: var(--white);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.24);
+}
+
+.owl-next {
+    background-color: var(--white);
+    box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.24);
+}
+
+.owl-prev span {
+    display: block;
+    padding: 0 10px;
+    font-size: 40px;
+    background-color: var(--white);
+}
+
+.owl-next span {
+    display: block;
+    padding: 0 10px;
+    font-size: 40px;
+    background-color: var(--white);
+}
+
+/* review profile card style end */
+
+.eventBanner {
+    height: 250px;
+    background-color: var(--green);
+}
+
+.bannerBox {
+    height: 100%;
+    position: relative;
+}
+
+.bannerBox img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background-position: center;
+}
+
+.imgWrapper {
+    width: 100%;
+    height: 100%;
+    background-color: #00000094;
+    position: absolute;
+    top: 0;
+}
+
+.imgWrapper h1 {
+    line-height: 250px;
+}
+
+
+.timeBar {
+    overflow-x: auto;
+}
+
+.timeBar::-webkit-scrollbar {
+    height: 7px;
+}
+
+.timeBar:hover::-webkit-scrollbar-thumb {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}
+
+.timeBar .list-group-item a {
+    color: var(--lightGreen);
+    font-weight: 400;
+    background-color: var(--lightGreen);
+    padding: 4px 10px;
+    font-size: 13px;
+    border: 3px dashed transparent;
+    color: var(--white);
+}
+
+.timeBar .list-group-item a:focus {
+    border: 3px dashed var(--lightGreen);
+}
+
+
+.EventCategory {
+    overflow-x: auto;
+}
+
+
+.EventCategory li a {
+    font-size: 14px;
+    color: var(--lightBlack);
+    font-weight: 600;
+    border: 2px solid transparent;
+}
+
+.EventCategory li a:focus {
+    color: var(--green);
+    font-weight: 600;
+    border-bottom: 2px solid var(--green);
+}
+
+.EventCategory::-webkit-scrollbar {
+    height: 7px;
+}
+
+.EventCategory:hover::-webkit-scrollbar-thumb {
+    background-color: #ecf0f1;
+    border-radius: 10px;
+}

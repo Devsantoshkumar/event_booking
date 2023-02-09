@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+:root{
+    --darkYellow: #f0932b;
+    --lightRed: #ff7979;
+    --darkBlue: #30336b;
+    --lightPink: #F34770;
+    --transPink: rgba(233, 73, 156, 0.205);
+    --darkPink: #770141;
+    --bodyColor: aliceblue;
+    --whiteColor: #ffff;
+    --dark2: #1C1F26;
+    --dark3: #a8b3cf33;
+    --dark-blue-color: #858ea2;
+}
+
+:root{
+    --indigo: #8892D6;
+    --lightIndigo: #A0A8DE;
+    --orange: #FC544B;
+    --lightOrange: #FD766F;
+    --sky: #45BBE0;
+    --lightSky: #6AC9E6;
+    --green: #6AC045;
+    --lightGreen: #88CD6A;
+    --black: #000000;
+    --lightBlack: #1A1D1F;
+    --white: #ffffff;
+    --gray: #717171;
+    --lightGray: #858ea2;
+}
+
+body{
+   background-color: var(--bodyColor);
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+a:hover{
+    color: var(--dark-blue-color);
+}
+
+button{
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.button{
+    cursor: pointer;
+    padding: 8px 10px;
+    margin: 0 10px;
+    border-radius: 5px;
+    width: max-content;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    background-color: var(--lightPink);
+    color: var(--whiteColor);
+    font-size: 14px;
+    text-align: center;
+}
+
+.submit{
+    cursor: pointer;
+    padding: 8px 10px;
+    background-color: var(--lightPink);
+    color: var(--whiteColor);
+    font-size: 14px;
+    text-align: center;
+    height: min-content;
+}
+
+input::placeholder, select::placeholder, textarea::placeholder{
+    font-size: 14px;
+}

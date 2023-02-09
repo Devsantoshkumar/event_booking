@@ -1,0 +1,629 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap');
+
+:root{
+    --blue0: #1a117b99;
+    --blue1: #383CC1;
+    --blue2: #2827CC;
+    --blue3: #3944F7;
+    --blue4: #5352ed;
+    --red0: #ff3f34;
+    --red1: #ff3838;
+    --red2: #f9125b;
+    --red3: #d51250;
+    --black0: #000000;
+    --black1: #2f3542;
+    --black2: #57606f;
+    --black3: #4d4d4d;
+    --yellow0: #ffa801;
+    --light1: #dfe6e9;
+    --light2: #919191;
+    --light3: #F1F3FA;
+    --fontFamilyPoppins: 'Poppins', sans-serif;
+    --fontFamilyOpensans: 'Open Sans', sans-serif;
+}
+
+body{
+    background-color: var(--light3) !important;
+}
+
+.header{
+    background-color: var(--blue2);
+    color: #fff;
+    font-family: var(--fontFamilyPoppins);
+}
+
+.top_row1{
+    font-size: 0.7em;
+    padding: 5px;
+    font-weight: 600;
+    text-shadow: 0 0 1px #000;
+    border-bottom: 1px solid rgb(161, 161, 161);
+}
+
+.top_row1 ul{
+    margin-block-end: 0;
+    list-style: none;
+}
+.top_row1 ul li a{
+    color: #fff;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.top_row1 ul li a .fa{
+    margin: 0 5px;
+    font-size: 0.8em;
+}
+
+.top_row2 .logo{
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+.top_row2 .logo .subLogo{
+    color: var(--yellow0);
+}
+
+.top_row2 .col-3 ul{
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.search::placeholder{
+    font-size: 0.9em;
+}
+
+.top_row3{
+    background-color: var(--blue0);
+}
+
+.top_row2 .col-3 ul{
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+}
+
+.top_row3 ul{
+    margin-block-end: 0;
+    padding-inline-start: 0;
+    list-style: none;
+    padding: 5px 0;
+}
+
+.navigation li a{
+   text-decoration: none;
+   color: #fff;
+   font-size: 0.8em;
+   padding: 5px 10px;
+   font-weight: 500;
+}
+
+.navigation li a .fa-chevron-circle-down{
+    font-size: 0.8em;
+}
+
+.gridImages{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 100%;
+}
+.gridImages .gridItem{
+    width: 210px;
+    height: 78px;
+    margin: 0 0 10px 0;
+}
+.gridImages .gridItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.serviceSection .col{
+   min-height: 80px;
+   background-color: #fff;
+   border-right: 1px solid #eee;
+}
+
+.serviceText{
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 200,
+  'GRAD' 0,
+  'opsz' 48
+}
+
+.serviceIcon{
+    font-size: 1.3em;
+}
+
+.itemCircle{
+    height: 130px;
+    width: 130px;
+    position: relative;
+    overflow: hidden;
+}
+.overlaySlip{
+   position: absolute;
+   bottom: 10px;
+   height: 25px;
+   line-height: 25px;
+   width: 100%;
+   background-color: var(--yellow0);
+   font-size: 0.8em;
+   font-weight: 500;
+   color: #fff;
+}
+.itemCircle img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.sidebarItemText p{
+   font-size: 0.7em;
+   font-weight: 500;
+}
+.actualamount{
+    font-weight: 500;
+}
+.offamount{
+    font-size: 0.8em;
+    font-weight: 400;
+}
+.starRating i{
+    font-size: 0.7em;
+    color: var(--yellow0);
+}
+.productHeading{
+    font-size: 0.8em;
+    font-weight: 500;
+}
+
+.productOverlaySlip{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90px;
+    height: 30px;
+    background-color: var(--red1);
+    clip-path: polygon(0 0, 100% 0%, 62% 100%, 0% 100%);
+    font-size: 0.8em;
+    font-weight: 600;
+    text-align: left;
+    padding-left: 5px;
+    line-height: 30px;
+    color: #fff;
+}
+.boxImage{
+    width: 100%;
+    height: 170px;
+}
+.boxImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.productCard{
+    transition: all 0.3s ease-in-out;
+}
+.productCard:hover{
+    box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.286);
+    background-color: rgb(244, 244, 244);
+}
+
+.fashionCard{
+    height: 100px;
+    position: relative;
+}
+.fashionCard img{
+    height: 100%;
+    object-fit: cover;
+}
+.fashionOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.246);
+    font-size: 1.5em;
+    color: #eee;
+    font-weight: 500;
+}
+
+.horizontalImage{
+    width: 100%;
+    height: 100%;
+}
+.horizontalImage img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.myContainer{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 150px;
+    grid-auto-rows: 150px;
+    background-color: #fff;
+    grid-gap: 0.5em;
+}
+
+.myCard{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    grid-template-rows: 150px;
+}
+
+.imageBox{
+    width: 100%;
+    height: 100%;
+}
+.imageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.productBox{
+    box-shadow: 1px 1px 8px rgba(39, 39, 39, 0.286);
+    background-color: rgb(244, 244, 244);
+}
+
+.footer{
+    min-height: 200px;
+    background-color: var(--black2);
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: max-content;
+    grid-gap: 1em;
+    padding: 2em;
+}
+
+.footerBox span{
+    text-transform: uppercase;
+    font-size: 0.9em;
+    color: #eee;
+    font-weight: 500;
+    position: relative;
+}
+.footerBox span:after{
+    position: absolute;
+    content: "";
+    width: 30%;
+    height: 5px;
+    left: 0;
+    bottom: -8px;
+    background-color: var(--red1);
+}
+.footerBox span:before{
+    position: absolute;
+    content: "";
+    width: 70%;
+    height: 2px;
+    right: 0;
+    bottom: -6px;
+    background-color: var(--yellow0);
+}
+.footerBox ul{
+    padding: 15px 0;
+    list-style: none;
+}
+.footerBox ul li a{
+    text-decoration: none;
+    color: rgb(189, 189, 189);
+    font-size: 0.8em;
+}
+
+.filterColor label{
+    font-size: 0.7em;
+    padding-bottom: 2px;
+}
+
+.choseColor{
+    display: grid;
+    grid-template-columns: repeat(5,25px);
+    grid-template-rows: 25px;
+    grid-gap: 10px;
+}
+
+.red{
+    background-color: red;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+.blue{
+    background-color: blue;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+.yellow{
+    background-color: yellow;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+.black{
+    background-color: black;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+.white{
+    background-color: white;
+    border: 2px solid #eee;
+    cursor: pointer;
+}
+
+.choseSize{
+    display: grid;
+    grid-template-columns: repeat(5,35px);
+    grid-template-rows: 30px;
+    grid-gap: 10px;
+}
+
+.size{
+    border: 1px solid rgb(215, 215, 215);
+    cursor: pointer;
+    text-align: center;
+    line-height: 30px;
+}
+
+.productPriceDetail span{
+    font-weight: 500;
+}
+.selectSize{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+.selectSize > span{
+    color: var(--red0);
+    font-weight: 600;
+}
+.totalAmount{
+    font-size: 1.5em;
+    font-weight: 500;
+    color: var(--red1);
+}
+
+.cartImageBox{
+    width: 120px;
+    height: 120px;
+}
+.cartImageBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.addremoveIcon{
+    width: 30px;
+    height: 30px;
+    line-height: 27px;
+    text-align: center;
+    border-radius: 50%;
+    cursor: pointer;
+    margin: 0 15px;
+    border: 2px solid #eee;
+}
+
+.itemNum{
+    border: 1px solid #eee;
+    padding: 0 15px;
+}
+
+.sidebar{
+    height: 150vh;
+    background-color: #313A46;
+    padding: 0 5px;
+    transition: all 0.3s ease-in-out;
+}
+
+.activeside{
+    width: 65px;
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.activeside .accordion-button .sicons{
+    font-size: 1.6rem;
+}
+.activeside .accordion-button .sname{
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+.activeside .logo .logoname{
+    display: none;
+}
+.sidebarmenu{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.sidebarmenu::-webkit-scrollbar{
+    width: 6px;
+}
+.sidebarmenu::-webkit-scrollbar-track{
+    background: var(--black1);
+    border-radius: 5px;
+}
+.sidebarmenu::-webkit-scrollbar-thumb{
+    background: var(--black2);
+    border-radius: 5px;
+}
+.accordion-link{
+    font-size: 0.9rem;
+    color: var(--light2);
+    font-weight: 500;
+}
+
+.accordion-link .sicons{
+    font-size: 1.2rem;
+}
+
+.accordion-button::after{
+    color: var(light1);
+}
+
+.accordion-body .subicons{
+    font-size: 0.9rem;
+    color: var(--light2);
+}
+
+.accordion-body .subname{
+    font-size: 0.9rem;
+    color: var(--light2);
+}
+.topbar{
+    height: 60px;
+}
+.toggleBtn span{
+    font-size: 2rem;
+    cursor: pointer;
+}
+.searchAdmin{
+    height: 35px;
+    background-color: var(--light3);
+}
+.searchAdmin button{
+    width: 90px;
+    background-color: var(--red2);
+    box-shadow: 0 2px 6px 0 rgba(246, 69, 116, 0.5);
+    font-weight: 500;
+}
+.searchAdmin button:hover{
+    background-color: var(--red3)
+}
+
+.profile{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+.topsettingIcons span{
+    cursor: pointer;
+}
+
+.pageHeading{
+    font-weight: 500;
+    color: var(--black3);
+}
+.actionBtns input{
+    width: 200px;
+    position: relative;
+    margin-right: 10px;
+}
+
+.add{
+    min-width: 40px;
+    height: 35px;
+    background-color: var(--blue4);
+    box-shadow: 0 2px 6px 0 rgba(69, 113, 246, 0.5);
+    cursor: pointer;
+}
+
+.add:hover{
+    background-color: var(--blue1);
+}
+
+.analyticCard{
+    height: 200px;
+}
+
+.analyticCard h3{
+    color: var(--black2);
+}
+
+.analyticCard .heading{
+    font-weight: 500;
+}
+.analyticCard .duration span:first-child{
+    color: rgb(7, 214, 7);
+    font-weight: 500;
+}
+.analyticCard .duration span:nth-child(2){
+    font-weight: 400;
+}
+
+.analyticCard .duration .material-symbols-sharp{
+    font-size: 1.2rem;
+}
+.notifications > span{
+   font-size: 1.1rem;
+}
+.notifications ul{
+    max-height: 400px;
+    overflow-y: scroll;
+}
+.notifications ul::-webkit-scrollbar{
+    width: 6px;
+}
+.notifications ul::-webkit-scrollbar-track{
+    background-color: white;
+    border-radius: 5px;
+}
+.notifications ul::-webkit-scrollbar-thumb{
+    background-color: var(--light1);
+    border-radius: 5px;
+}
+
+.notifications ul li{
+    display: block;
+    list-style: none;
+    padding: 8px;
+    margin: 15px 0;
+    transition: all 0.2s ease-in-out;
+}
+.notiActive{
+    background-color: var(--light3);
+}
+.notifications ul li a{
+    text-decoration: none;
+    color: inherit;
+}
+.notifications ul li:hover{
+    background-color: var(--light3);
+    transition: all 0.2s ease-in-out;
+}
+.notificationheader .name{
+    font-weight: 500;
+    color: var(--black3);
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.notificationheader .time{
+    font-weight: 500;
+    color: var(--blue4);
+    font-size: 0.9rem;
+    float: right;
+    font-size: 0.8rem;
+}
+.notifications .discription{
+    padding: 5px 0;
+    font-size: 0.8rem;
+}
+
+.accordion{
+    --bs-accordion-btn-color: #eee;
+}
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 1rem;
+    height: 1rem;
+    margin-left: auto;
+    content: "";
+    background-image: var(--bs-accordion-btn-icon);
+    background-repeat: no-repeat;
+    background-size: 1rem;
+    transition: var(--bs-accordion-btn-icon-transition);
+}
