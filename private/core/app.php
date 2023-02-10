@@ -12,12 +12,12 @@ class App{
 
         /* checking controller which is calling a page if 
            they are exist then create object of the class controller */
-        if(file_exists("../private/controllers/".$URL[0].".php"))
+        if(file_exists("private/controllers/".$URL[0].".php"))
         {
             $this->controller = ucfirst($URL[0]);
             unset($URL[0]);
         }
-        require("../private/controllers/".$this->controller.".php");
+        require("private/controllers/".$this->controller.".php");
         $this->controller = new $this->controller();
 
 
