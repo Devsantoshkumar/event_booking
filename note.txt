@@ -1,0 +1,5 @@
+password: t9luFU4CG99}5@0r
+
+databaseName: id20284197_event_db
+
+userName: id20284197_root
