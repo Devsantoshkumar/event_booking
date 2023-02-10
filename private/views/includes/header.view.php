@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
     <?php 
-    $URL = $_SERVER['REQUEST_URI'];
-    $URL = explode('/', $URL);
-    $projCat = new Category();
-    $Event = new Event();
+    // $URL = $_SERVER['REQUEST_URI'];
+    // $URL = explode('/', $URL);
+    // $projCat = new Category();
+    // $Event = new Event();
 
-    if(!empty($URL[1]) && empty($URL[2]) && empty($URL[3]))
-    {
-        $title = strtolower($URL[1]);
-        $description = "The web 3.0 is a free download project";
-    }
-    else if(!empty($URL[1]) && !empty($URL[2]) && empty($URL[3]))
-    {
-        $title = strtolower($URL[2]);
-        switch($title){
-            case "source":
-                $description = "Download projects";
-            break;
-            case "comming":
-                $description = "Comming soon!";
-            break;
-            default:
-                $description = "Tech website";
-            break;
-         }
-    }
-    else if(!empty($URL[1]) && !empty($URL[2]) && !empty($URL[3]))
-    {
-        $title = strtolower($URL[3]);
-        $page =  strtolower($URL[2]);
-        switch($page){
-            case "book_event":
-                $data = $projCat->where('id',$title);
-                $description = $data[0]->meta_description;
-            break;
-            default:
-                $description = "Event booking";
-            break;
-         }
+    // if(!empty($URL[1]) && empty($URL[2]) && empty($URL[3]))
+    // {
+    //     $title = strtolower($URL[1]);
+    //     $description = "The web 3.0 is a free download project";
+    // }
+    // else if(!empty($URL[1]) && !empty($URL[2]) && empty($URL[3]))
+    // {
+    //     $title = strtolower($URL[2]);
+    //     switch($title){
+    //         case "source":
+    //             $description = "Download projects";
+    //         break;
+    //         case "comming":
+    //             $description = "Comming soon!";
+    //         break;
+    //         default:
+    //             $description = "Tech website";
+    //         break;
+    //      }
+    // }
+    // else if(!empty($URL[1]) && !empty($URL[2]) && !empty($URL[3]))
+    // {
+    //     $title = strtolower($URL[3]);
+    //     $page =  strtolower($URL[2]);
+    //     switch($page){
+    //         case "book_event":
+    //             $data = $projCat->where('id',$title);
+    //             $description = $data[0]->meta_description;
+    //         break;
+    //         default:
+    //             $description = "Event booking";
+    //         break;
+    //      }
 
-        }
+    //     }
 
  ?>
 <head>
