@@ -1,7 +1,7 @@
 <?php
 
-define('ROOT','http://localhost/EventBooking');
-define('ASSETS','http://localhost/EventBooking/assets');
+define('ROOT','https://devsantoshkumar.github.io/EventBooking');
+define('ASSETS','https://devsantoshkumar.github.io/EventBooking/assets');
 
 
 define("DBNAME","event_book_db");
